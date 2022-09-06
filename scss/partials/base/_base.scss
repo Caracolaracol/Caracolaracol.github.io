@@ -19,19 +19,27 @@ body {
         max-height: 100vh;
         #container {
             min-height: 93vh;
-        }
-        .main-container {
-            position: absolute;
-            top: 0;
-            //height:100vh;  
-            //width: 100vw;
-            .main {
-                margin-top: 8rem;
-                margin-left: 20rem;
+            .main-container {
+                position: absolute;
+                top: 0;
+                //height:100vh;  
+                //width: 100vw;
+                .main {
+                    margin-top: 8rem;
+                    margin-left: 20rem;
+                }
             }
         }
+        
     }
 }
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+
 
 
 // FONTS

@@ -1,0 +1,136 @@
+@import "../abstracts/variables";
+
+// WELCOME SECTION
+.welcome-section {
+    height: 75vh;
+    //background-color:$negro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .welcome-section__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //align-content: center;
+        text-align: center;
+        background-color:$negro;
+        gap: .6rem;
+        //width: 100vw;
+        //margin-top: -12rem;
+        animation: aparecerindexcontainer  450ms ease-in;
+        overflow: hidden;
+        .welcome-section__item {
+            display: flex;
+            flex-direction: column;
+            height: 27rem;
+            gap: .3rem;
+            @media screen and (max-width: 828px) {
+                max-width: 17rem;
+            }
+            h1 {
+                font-family: 'ChronoType' !important;
+                font-size: 24px !important;
+            }
+            
+            h2 {
+                font-family: 'ChronoType' !important;
+                font-size: 15px !important;
+                font-weight: 900 !important;
+                letter-spacing: 3px;
+            }
+            
+            p {
+                font-family: 'ChronoType' !important;
+                font-size: 19px !important;
+                letter-spacing: 1px;
+            }
+        }
+        .ws-btn {
+            height: 3rem;
+        }
+        .transition-img {
+            display: block ;
+            width: 16rem;
+            overflow: hidden;
+            height: 12.6rem;
+            //position: relative;
+            //overflow: hidden;
+            .welcome-section__image-container {
+                margin-top:-12.7rem;
+                .round-img2 {
+                    position: sticky;
+                    animation-name: transition-img-FadeInOut;
+                    animation-timing-function: ease-in-out;
+                    animation-iteration-count: infinite;
+                    animation-duration: 4s;
+                    animation-direction: alternate-reverse;
+                }
+                .round-img1 {
+                    position: relative;
+                    top: 203.5px;
+                    z-index: 99;
+                    animation-name: transition-img-FadeInOut;
+                    animation-timing-function: ease-in-out;
+                    animation-iteration-count: infinite;
+                    animation-duration: 4s;
+                    animation-direction: alternate;
+                    
+                    
+                }
+                .round-img {
+                    width: 13.5rem;
+                    clip-path: circle();
+                    transition: opacity 4s ease-in-out;
+                    
+                }
+            }
+        }
+        .ws-height {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 5rem;
+            width: 55rem;
+            overflow: hidden;
+            @media screen and (max-width: 828px) {
+                height: 8rem;
+            }
+            h1 {
+
+                overflow: hidden;
+            }
+            p {
+
+                overflow: hidden;
+            }
+            h2 {
+
+                overflow: hidden;
+            }
+
+        }
+        .welcome-section__links {
+            display: flex;
+            flex-direction: row;
+            gap: 13px;
+            
+        }
+        
+    }
+}
+@keyframes aparecerindexcontainer {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes transition-img-FadeInOut {
+    0% { opacity:1; }
+    45% { opacity:1; }
+    55% { opacity:0; }
+    100% { opacity:0; }
+}
+
+// MAIN
+.main-container-show {
+    display: none;
+}

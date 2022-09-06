@@ -19,11 +19,21 @@
         border-top-color: $naranja;
         flex-direction: row;
         justify-content: space-between;
+        .footer__section {
+            .footer__text {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                .logo-footer {
+                    width: 1.4rem;
+                }
+            }
+        }
     }
-    /*
+    
     .footer-show {
         display: none;
     }
-    */
+    
 }
 

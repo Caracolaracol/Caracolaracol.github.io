@@ -1,16 +1,17 @@
 .nav-container {
-    position: relative;
+    position: absolute;
     height: 82.5vh;
     width: 16rem;
     @media screen and (max-width: 828px) {
         display: none;
     }
     .main-nav {
-        position: fixed;
+        position: sticky;
         margin: 1.6rem;
         margin-top: 1rem;
         width: 14rem;
         float: left;
+        z-index: 2;
         &__title1 {
             display: block;
             margin-bottom: auto;
@@ -32,11 +33,11 @@
             }
         }  
     }
-    /*
+    
     .main-nav-show {
         display: none;
     }
-    */
+    
 }
 
 
