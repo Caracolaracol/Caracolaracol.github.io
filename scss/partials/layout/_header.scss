@@ -1,0 +1,28 @@
+@import "../abstracts/variables";
+.header-container {
+    position: relative;
+    height: 6.4rem;
+    width: 85%;
+    left: 2%;
+    .header {
+        position: fixed;
+        width: 85%;
+        height: 6.4rem;
+        border-bottom: .03rem;
+        border-bottom-style: solid;
+        border-bottom-color: $naranja;
+        .header__logo {
+            width: 5.2rem;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .header__link {
+                .logo {
+                    position: relative;
+                    width: 5.2rem;
+                }
+            }
+        }
+    }
+}

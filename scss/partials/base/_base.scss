@@ -1,0 +1,64 @@
+@import "../abstracts/variables";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $white__medium;
+    font-size: 16px !important;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    overflow: auto;
+}
+
+body {
+    min-height:100vh;  
+    max-height: 100vh;
+    line-height: normal;
+    background-color: $negro;
+    #root {
+        min-height:100vh;  
+        max-height: 100vh;
+        #container {
+            min-height: 93vh;
+        }
+        .main-container {
+            position: absolute;
+            top: 0;
+            //height:100vh;  
+            //width: 100vw;
+            .main {
+                margin-top: 8rem;
+                margin-left: 20rem;
+            }
+        }
+    }
+}
+
+
+// FONTS
+@font-face {
+    font-family: 'pkmnfont';
+    src: url('./fonts/PKMN\ RBYGSC.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('./fonts/Cormorant-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'ChronoType';
+    src: url('./fonts/ChronoType.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+    
+}
+@font-face {
+    font-family: 'Tommy';
+    src: url('./fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}

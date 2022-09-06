@@ -1,0 +1,29 @@
+@import "../abstracts/variables";
+
+.footer-container {
+    bottom: 0;
+    height: 7vh;
+    //position: fixed;
+    width: 85%;
+    margin-left: 2%;
+    @media screen and (max-width: 828px) {
+        display: none;
+    }
+    .footer {
+        display: flex;
+        height: 3rem;
+        align-items: center;
+        text-align: center;
+        border-top-style: solid;
+        border-top-width: .03rem;
+        border-top-color: $naranja;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /*
+    .footer-show {
+        display: none;
+    }
+    */
+}
+
