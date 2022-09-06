@@ -46,7 +46,14 @@
             }
         }
         .ws-btn {
-            height: 3rem;
+            height: 4rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1rem;
+            button {
+                max-width: 12rem;
+            }
         }
         .transition-img {
             display: block ;
