@@ -5,8 +5,12 @@
     @media screen and (max-width: 828px) {
         display: none;
     }
+    .nav-container__empty-logo {
+        height: 6.4rem;
+        width: 16rem;
+    }
     .main-nav {
-        position: sticky;
+        position: fixed;
         margin: 1.6rem;
         margin-top: 1rem;
         width: 14rem;
@@ -36,6 +40,7 @@
     
     .main-nav-show {
         display: none;
+        animation: showfooter  450ms ease-in;
     }
     
 }

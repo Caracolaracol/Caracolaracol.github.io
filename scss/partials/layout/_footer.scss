@@ -3,7 +3,6 @@
 .footer-container {
     bottom: 0;
     height: 7vh;
-    //position: fixed;
     width: 85%;
     margin-left: 2%;
     @media screen and (max-width: 828px) {
@@ -12,6 +11,7 @@
     .footer {
         display: flex;
         height: 3rem;
+        bottom: 0;
         align-items: center;
         text-align: center;
         border-top-style: solid;
@@ -30,10 +30,13 @@
             }
         }
     }
-    
     .footer-show {
         display: none;
+        animation: showfooter  450ms ease-in;
     }
-    
 }
 
+@keyframes showfooter {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
