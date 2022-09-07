@@ -150,11 +150,16 @@
 }
 
 .main-container {
+    width: 100vw;
+    height: 100vh;
     .tapador-header {
         position: fixed;
         top: 0;
         height: 6.4rem;
         width: 100%;
         background-color: $negro;
+    }
+    .main {
+        min-height: 79vh;
     }
 }
