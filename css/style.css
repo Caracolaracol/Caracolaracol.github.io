@@ -27,10 +27,15 @@ body {
 h1 {
   font-family: 'Tommy';
   font-style: normal;
-  font-size: 3rem; }
+  font-size: 3.1rem; }
 
 p {
-  font-size: 14px; }
+  font-size: 1.1rem;
+  letter-spacing: 1px; }
+
+button {
+  font-size: 1rem;
+  letter-spacing: 1px; }
 
 a, a:hover, a:visited, a:active {
   color: inherit;
@@ -49,13 +54,14 @@ a, a:hover, a:visited, a:active {
   font-weight: bold; }
 
 @font-face {
-  font-family: 'dDegradasi';
-  src: url("./fonts/dDegradasi.ttf") format("truetype");
-  font-style: normal; }
+  font-family: 'Tommy';
+  src: url("./fonts/MADE Tommy Soft Medium PERSONAL USE.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal; }
 
 @font-face {
-  font-family: 'Tommy';
-  src: url("./fonts/MADE Tommy Soft Medium PERSONAL USE.otf") format("truetype");
+  font-family: 'Neufreit';
+  src: url("./fonts/Neufreit-ExtraBold.otf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
@@ -136,8 +142,8 @@ a, a:hover, a:visited, a:active {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      height: 6.6rem;
-      width: 55rem;
+      height: 6.9rem;
+      width: 70rem;
       overflow: hidden; }
       @media screen and (max-width: 828px) {
         .welcome-section .welcome-section__body .ws-height {
@@ -148,17 +154,18 @@ a, a:hover, a:visited, a:active {
           color: #cd7527;
           font-family: 'Tommy';
           font-style: normal;
-          font-size: 3rem; }
+          font-size: 3.3rem; }
       .welcome-section .welcome-section__body .ws-height p {
         overflow: hidden; }
         .welcome-section .welcome-section__body .ws-height p a {
-          font-size: 14px;
-          letter-spacing: 1px !important;
+          font-size: 1.1rem;
+          letter-spacing: 1px;
           color: #935e30; }
           .welcome-section .welcome-section__body .ws-height p a:hover {
             color: #cd7527; }
       .welcome-section .welcome-section__body .ws-height h2 {
         overflow: hidden;
+        font-size: 1.3rem;
         letter-spacing: 1px; }
     .welcome-section .welcome-section__body .welcome-section__links {
       display: flex;

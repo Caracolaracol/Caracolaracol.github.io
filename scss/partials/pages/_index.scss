@@ -79,8 +79,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            height: 6.6rem;
-            width: 55rem;
+            height: 6.9rem;
+            width: 70rem;
             overflow: hidden;
             @media screen and (max-width: 828px) {
                 height: 8rem;
@@ -92,7 +92,7 @@
                     color: $naranja__text-hover;
                     font-family:'Tommy';
                     font-style: normal;
-                    font-size: 3rem;
+                    font-size: 3.3rem;
                 }
             }
 
@@ -100,8 +100,9 @@
             p {
                 overflow: hidden;
                 a {
-                    font-size: 14px;
-                    letter-spacing: 1px !important;
+                    
+                    font-size: 1.1rem;
+                    letter-spacing: 1px;
                     color: $naranja__text;
                     &:hover {
                         color: $naranja__text-hover;
@@ -110,6 +111,8 @@
             }
             h2 {
                 overflow: hidden;
+                
+                font-size: 1.3rem;
                 letter-spacing: 1px;
             }
 
