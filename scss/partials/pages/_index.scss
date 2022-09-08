@@ -27,23 +27,6 @@
             @media screen and (max-width: 828px) {
                 max-width: 17rem;
             }
-            h1 {
-                font-family: 'ChronoType' !important;
-                font-size: 24px !important;
-            }
-            
-            h2 {
-                font-family: 'ChronoType' !important;
-                font-size: 19px !important;
-                font-weight: 900 !important;
-                letter-spacing: 3px;
-            }
-            
-            p {
-                font-family: 'ChronoType' !important;
-                font-size: 19px !important;
-                letter-spacing: 1px;
-            }
         }
         .ws-btn {
             height: 4rem;
@@ -95,21 +78,23 @@
         .ws-height {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            height: 5rem;
+            justify-content: space-evenly;
+            height: 6.6rem;
             width: 55rem;
             overflow: hidden;
             @media screen and (max-width: 828px) {
                 height: 8rem;
             }
+            
             h1 {
                 overflow: hidden;
             }
+
+
             p {
                 overflow: hidden;
                 a {
-                    font-family: 'ChronoType' !important;
-                    font-size: 19px !important;
+                    font-size: 14px;
                     letter-spacing: 1px !important;
                     color: $naranja__text;
                     &:hover {
@@ -118,8 +103,8 @@
                 }
             }
             h2 {
-
                 overflow: hidden;
+                letter-spacing: 1px;
             }
 
         }
@@ -127,9 +112,13 @@
             display: flex;
             flex-direction: row;
             gap: 13px;
-            
+            .welcome-section__link {
+                font-family: 'ChronoType';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
         }
-        
     }
 }
 @keyframes aparecerindexcontainer {

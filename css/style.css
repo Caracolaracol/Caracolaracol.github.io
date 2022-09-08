@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   color: #c6c6c6;
-  font-size: 16px !important;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   overflow: auto; }
 
 body {
@@ -24,6 +24,14 @@ body {
           margin-top: 8rem;
           margin-left: 20rem; }
 
+h1 {
+  font-family: 'Tommy';
+  font-style: normal;
+  font-size: 3rem; }
+
+p {
+  font-size: 14px; }
+
 a, a:hover, a:visited, a:active {
   color: inherit;
   text-decoration: none; }
@@ -35,23 +43,38 @@ a, a:hover, a:visited, a:active {
   font-weight: normal; }
 
 @font-face {
-  font-family: 'Cormorant';
-  src: url("./fonts/Cormorant-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
   font-family: 'ChronoType';
   src: url("./fonts/ChronoType.ttf") format("truetype");
   font-style: normal;
   font-weight: bold; }
 
 @font-face {
+  font-family: 'dDegradasi';
+  src: url("./fonts/dDegradasi.ttf") format("truetype");
+  font-style: normal; }
+
+@font-face {
   font-family: 'Tommy';
-  src: url("./fonts/MADE TOMMY Regular_PERSONAL USE.otf") format("truetype");
+  src: url("./fonts/MADE Tommy Soft Medium PERSONAL USE.otf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
+/*
+@font-face {
+    font-family: 'Cormorant';
+    src: url('./fonts/Cormorant-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: 'Tommy';
+    src: url('./fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+*/
 .welcome-section {
   height: 75vh;
   display: flex;
@@ -74,18 +97,6 @@ a, a:hover, a:visited, a:active {
       @media screen and (max-width: 828px) {
         .welcome-section .welcome-section__body .welcome-section__item {
           max-width: 17rem; } }
-      .welcome-section .welcome-section__body .welcome-section__item h1 {
-        font-family: 'ChronoType' !important;
-        font-size: 24px !important; }
-      .welcome-section .welcome-section__body .welcome-section__item h2 {
-        font-family: 'ChronoType' !important;
-        font-size: 19px !important;
-        font-weight: 900 !important;
-        letter-spacing: 3px; }
-      .welcome-section .welcome-section__body .welcome-section__item p {
-        font-family: 'ChronoType' !important;
-        font-size: 19px !important;
-        letter-spacing: 1px; }
     .welcome-section .welcome-section__body .ws-btn {
       height: 4rem;
       display: flex;
@@ -124,8 +135,8 @@ a, a:hover, a:visited, a:active {
     .welcome-section .welcome-section__body .ws-height {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      height: 5rem;
+      justify-content: space-evenly;
+      height: 6.6rem;
       width: 55rem;
       overflow: hidden; }
       @media screen and (max-width: 828px) {
@@ -136,18 +147,23 @@ a, a:hover, a:visited, a:active {
       .welcome-section .welcome-section__body .ws-height p {
         overflow: hidden; }
         .welcome-section .welcome-section__body .ws-height p a {
-          font-family: 'ChronoType' !important;
-          font-size: 19px !important;
+          font-size: 14px;
           letter-spacing: 1px !important;
           color: #935e30; }
           .welcome-section .welcome-section__body .ws-height p a:hover {
             color: #cd7527; }
       .welcome-section .welcome-section__body .ws-height h2 {
-        overflow: hidden; }
+        overflow: hidden;
+        letter-spacing: 1px; }
     .welcome-section .welcome-section__body .welcome-section__links {
       display: flex;
       flex-direction: row;
       gap: 13px; }
+      .welcome-section .welcome-section__body .welcome-section__links .welcome-section__link {
+        font-family: 'ChronoType';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.5rem; }
 
 @keyframes aparecerindexcontainer {
   from {
