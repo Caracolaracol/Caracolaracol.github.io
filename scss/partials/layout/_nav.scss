@@ -1,3 +1,4 @@
+/*
 .nav-container {
     position: absolute;
     height: 82.5vh;
@@ -53,4 +54,31 @@
 @keyframes aparecernav {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+*/
+
+.nav-bar__container {
+    width: 80vw;
+    height: 6.3rem;
+    nav {
+        margin: 2.3rem;
+        margin-left: 20rem;
+        margin-right: 2rem;
+        .nav-bar__list {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 2;
+            justify-content: space-evenly;
+            li {
+                .main-nav__title {
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+                }
+            }
+        }
+    }
+    .main-nav-show {
+        display: none;
+        animation: showfooter  450ms ease-in;
+    }
 }

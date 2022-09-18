@@ -79,7 +79,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            height: 6.9rem;
+            height: 7.2rem;
             width: 70rem;
             overflow: hidden;
             @media screen and (max-width: 828px) {
@@ -99,6 +99,7 @@
 
             p {
                 overflow: hidden;
+                height: 1.7rem;
                 a {
                     
                     font-size: 1.1rem;
@@ -145,6 +146,7 @@
 // MAIN
 .main-container-show {
     display: none;
+    animation: showfooter  450ms ease-in;
 }
 
 .main-container {

@@ -7,6 +7,8 @@
     z-index: 3;
     .header {
         position: fixed;
+        display: flex;
+        flex-direction: row;
         width: 85%;
         height: 6.4rem;
         border-bottom: .03rem;
@@ -25,5 +27,6 @@
                 }
             }
         }
+        
     }
 }
