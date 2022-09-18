@@ -194,6 +194,13 @@ a, a:hover, a:visited, a:active {
   100% {
     opacity: 0; } }
 
+@keyframes desaparecerWelcome {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    display: none; } }
+
 .main-container-show {
   display: none;
   animation: showfooter  450ms ease-in; }
@@ -251,8 +258,7 @@ a, a:hover, a:visited, a:active {
   height: 6.4rem;
   width: 85%;
   left: 2%;
-  z-index: 3;
-  animation: showfooter 50ms ease-in; }
+  z-index: 3; }
   .header-container .header {
     position: fixed;
     display: none;
@@ -263,14 +269,21 @@ a, a:hover, a:visited, a:active {
     border-bottom-style: solid;
     border-bottom-color: rgba(147, 94, 48, 0.377); }
     .header-container .header .header__logo {
+      display: none;
       width: 5.2rem;
       height: 100%;
-      display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      animation: showlogo 150ms ease-in; }
       .header-container .header .header__logo .header__link .logo {
         position: relative;
         width: 5.2rem; }
+
+@keyframes showlogo {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /*
 .nav-container {
@@ -346,19 +359,19 @@ a, a:hover, a:visited, a:active {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
       .nav-bar__container nav .nav-bar__list li .t1 {
         display: none;
-        animation: showfooter  200ms ease-in; }
+        animation: showfooter  300ms ease-in; }
       .nav-bar__container nav .nav-bar__list li .t2 {
         display: none;
-        animation: showfooter 400ms ease-in; }
+        animation: showfooter 600ms ease-in; }
       .nav-bar__container nav .nav-bar__list li .t3 {
         display: none;
-        animation: showfooter  800ms ease-in; }
+        animation: showfooter  900ms ease-in; }
       .nav-bar__container nav .nav-bar__list li .t4 {
         display: none;
         animation: showfooter  1200ms ease-in; }
       .nav-bar__container nav .nav-bar__list li .t5 {
         display: none;
-        animation: showfooter  1400ms ease-in; }
+        animation: showfooter  1500ms ease-in; }
 
 .btn {
   border: none;

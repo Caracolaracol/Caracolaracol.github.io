@@ -9,15 +9,24 @@ const t3 = document.querySelector('.t3')
 const t4 = document.querySelector('.t4')
 const t5 = document.querySelector('.t5')
 const header = document.querySelector('.header')
-btnWebDevelopment.addEventListener('click', function(){
-    welcomeSection.style.display = 'none'
-    footer.style.display = 'flex'
-    header.style.display = 'flex'
-    t1.style.display = 'block'
-    t2.style.display = 'block'
-    t3.style.display = 'block'
-    t4.style.display = 'block'
-    t5.style.display = 'block'
+const headerLogo = document.querySelector('.header__logo')
 
-    main.style.display= 'block'
+function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+}
+
+btnWebDevelopment.addEventListener('click', function(){
+    welcomeSection.style.animation = 'desaparecerWelcome 200ms ease-out'
+    delay(200).then(function() {
+        welcomeSection.style.display = 'none'
+        footer.style.display = 'flex'
+        header.style.display = 'flex'
+        headerLogo.style.display = 'flex'
+        t1.style.display = 'block'
+        t2.style.display = 'block'
+        t3.style.display = 'block'
+        t4.style.display = 'block'
+        t5.style.display = 'block'
+        main.style.display= 'block'
+    })
 })

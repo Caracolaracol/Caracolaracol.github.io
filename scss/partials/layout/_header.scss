@@ -6,7 +6,7 @@
     width: 85%;
     left: 2%;
     z-index: 3;
-    animation: showfooter 50ms ease-in;
+    
     .header {
         position: fixed;
         display: none;
@@ -17,11 +17,12 @@
         border-bottom-style: solid;
         border-bottom-color: $naranja;
         .header__logo {
+            display: none;
             width: 5.2rem;
             height: 100%;
-            display: flex;
             justify-content: center;
             align-items: center;
+            animation: showlogo 150ms ease-in;
             .header__link {
                 .logo {
                     position: relative;
@@ -32,3 +33,9 @@
         
     }
 }
+
+@keyframes showlogo {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+

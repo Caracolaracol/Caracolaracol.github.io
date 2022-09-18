@@ -143,6 +143,11 @@
     100% { opacity:0; }
 }
 
+@keyframes desaparecerWelcome {
+    0% {opacity: 1;}
+    100% {opacity: 0; display: none;}
+}
+
 // MAIN
 .main-container-show {
     display: none;
