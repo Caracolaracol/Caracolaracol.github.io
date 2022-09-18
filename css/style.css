@@ -251,10 +251,11 @@ a, a:hover, a:visited, a:active {
   height: 6.4rem;
   width: 85%;
   left: 2%;
-  z-index: 3; }
+  z-index: 3;
+  animation: showfooter 50ms ease-in; }
   .header-container .header {
     position: fixed;
-    display: flex;
+    display: none;
     flex-direction: row;
     width: 85%;
     height: 6.4rem;
@@ -343,9 +344,21 @@ a, a:hover, a:visited, a:active {
       justify-content: space-evenly; }
       .nav-bar__container nav .nav-bar__list li .main-nav__title {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
-  .nav-bar__container .main-nav-show {
-    display: none;
-    animation: showfooter  450ms ease-in; }
+      .nav-bar__container nav .nav-bar__list li .t1 {
+        display: none;
+        animation: showfooter  200ms ease-in; }
+      .nav-bar__container nav .nav-bar__list li .t2 {
+        display: none;
+        animation: showfooter 400ms ease-in; }
+      .nav-bar__container nav .nav-bar__list li .t3 {
+        display: none;
+        animation: showfooter  800ms ease-in; }
+      .nav-bar__container nav .nav-bar__list li .t4 {
+        display: none;
+        animation: showfooter  1200ms ease-in; }
+      .nav-bar__container nav .nav-bar__list li .t5 {
+        display: none;
+        animation: showfooter  1400ms ease-in; }
 
 .btn {
   border: none;

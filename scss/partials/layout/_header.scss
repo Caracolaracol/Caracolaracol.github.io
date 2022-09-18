@@ -1,13 +1,15 @@
 @import "../abstracts/variables";
 .header-container {
+    
     position: relative;
     height: 6.4rem;
     width: 85%;
     left: 2%;
     z-index: 3;
+    animation: showfooter 50ms ease-in;
     .header {
         position: fixed;
-        display: flex;
+        display: none;
         flex-direction: row;
         width: 85%;
         height: 6.4rem;

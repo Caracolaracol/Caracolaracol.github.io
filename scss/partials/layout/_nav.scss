@@ -74,11 +74,27 @@
                     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
                 }
+                .t1 {
+                    display: none;
+                    animation: showfooter  200ms ease-in;
+                }
+                .t2 {
+                    display: none;
+                    animation: showfooter 400ms ease-in;
+                }
+                .t3 {
+                    display: none;
+                    animation: showfooter  800ms ease-in;
+                }
+                .t4 {
+                    display: none;
+                    animation: showfooter  1200ms ease-in;
+                }
+                .t5 {
+                    display: none;
+                    animation: showfooter  1400ms ease-in;
+                }
             }
         }
-    }
-    .main-nav-show {
-        display: none;
-        animation: showfooter  450ms ease-in;
     }
 }
