@@ -10,7 +10,7 @@ const t4 = document.querySelector('.t4')
 const t5 = document.querySelector('.t5')
 const header = document.querySelector('.header')
 const headerLogo = document.querySelector('.header__logo')
-
+const firefly = document.querySelector('.firefly-show')
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
@@ -19,6 +19,7 @@ btnWebDevelopment.addEventListener('click', function(){
     welcomeSection.style.animation = 'desaparecerWelcome 200ms ease-out'
     delay(200).then(function() {
         welcomeSection.style.display = 'none'
+        firefly.style.display = 'none'
         footer.style.display = 'flex'
         header.style.display = 'flex'
         headerLogo.style.display = 'flex'
@@ -28,5 +29,6 @@ btnWebDevelopment.addEventListener('click', function(){
         t4.style.display = 'block'
         t5.style.display = 'block'
         main.style.display= 'block'
+        
     })
 })
