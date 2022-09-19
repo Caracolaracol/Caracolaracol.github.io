@@ -8,8 +8,9 @@
     <title>Caracol - Web developer</title>
 </head>
 <body>
+    <div id="tsparticles"></div>
     <div id="root">
-
+        
         <!-- NAV BAR
         <div class="nav-container">
             <div class="nav-container__empty-logo"></div>
@@ -75,6 +76,7 @@
                 <!-- WELCOME SECTION -->
             <section class="welcome-section">
                 <div class="welcome-section__body">
+
                     <div class="welcome-section__item transition-img">
                         <div class="welcome-section__image-container">
                             <img class="welcome-section__image round-img round-img1" src="./images/yo.jpg" alt="">
@@ -140,5 +142,19 @@
         
     </div>  
     <script src="./js/main.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.3.1/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-firefly@2/tsparticles.preset.firefly.bundle.min.js"></script>
+    <script type="text/javascript">
+        (async () => {
+    await tsParticles.load("tsparticles", {
+    preset: "firefly",
+    background: {
+        opacity: 0 
+    }
+    });
+})();
+    </script>
+    <script src="./js/particle.js"></script>
 </body>
 </html>

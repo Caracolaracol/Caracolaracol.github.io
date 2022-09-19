@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "tsparticles-engine": "^2.3.1"
   }
 }
