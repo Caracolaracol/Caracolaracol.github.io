@@ -99,7 +99,8 @@ a, a:hover, a:visited, a:active {
       display: flex;
       flex-direction: column;
       height: 27rem;
-      gap: .2rem; }
+      gap: .2rem;
+      z-index: 4; }
       @media screen and (max-width: 828px) {
         .welcome-section .welcome-section__body .welcome-section__item {
           max-width: 17rem; } }
@@ -171,7 +172,8 @@ a, a:hover, a:visited, a:active {
     .welcome-section .welcome-section__body .welcome-section__links {
       display: flex;
       flex-direction: row;
-      gap: 13px; }
+      gap: 13px;
+      z-index: 4; }
       .welcome-section .welcome-section__body .welcome-section__links .welcome-section__link {
         font-family: 'ChronoType';
         font-style: normal;
